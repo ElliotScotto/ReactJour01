@@ -1,12 +1,19 @@
 import "./App.css";
+import Title from "./Title";
+import Description from "./Description";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Lorem</h1>
-      lorem
-    </div>
+    <>
+      <div className="content">
+        <Title name={"Lorem"} className="title" />
+        <Description></Description>
+      </div>
+      <div className="content">
+        <Title name={"Ipsum"} className="title" />
+        <Description text={""}></Description>
+      </div>
+    </>
   );
-}
-
+};
 export default App;
